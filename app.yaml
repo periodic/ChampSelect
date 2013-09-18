@@ -1,12 +1,15 @@
 application: your-app-id
 version: 1
 runtime: python27
-threadsafe: true
+# threadsafe: true
 api_version: 1
 
 default_expiration: "10m"
 
 handlers:
+- url: /game.*
+  script: champselect.application
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico

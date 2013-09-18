@@ -1,5 +1,11 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div class="game-link">
+    <a href="/#/game/{{game_id}}">{{game.game_id}}</a>
+</div>
+
+<div id="blue-team">
+    <div class="team-name">{{game.blue_team.name}}</div>
+</div>
+
+<div id="purple-team">
+    <div class="team-name">{{game.purple_team.name}}</div>
+</div>
